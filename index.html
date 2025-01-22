@@ -33,7 +33,9 @@
       <!-- Main Column -->
       <div class="w-full md:w-1/3 bg-white shadow p-4">
         <h2 class="text-xl font-semibold">Quick Links</h2>
+
         <ul class="mt-4 space-y-2">
+        <li><a href="#" class="text-blue-500 hover:underline" onclick="toggleSection('common-info')">About me</a></li>
           <li><a href="#" class="text-blue-500 hover:underline" onclick="toggleSection('work-experience')">Work Experience</a></li>
           <li><a href="#" class="text-blue-500 hover:underline" onclick="toggleSection('education')">Education</a></li>
           <li><a href="#" class="text-blue-500 hover:underline" onclick="toggleSection('skills')">Skills</a></li>
@@ -42,6 +44,42 @@
 
       <!-- Expandable Panels -->
       <div id="panel-container" class="w-full md:w-2/3 mt-4 md:mt-0 md:ml-4">
+        <section id="common-info" class="bg-white shadow p-4">
+            <div class="about-me mb-6">
+                <h2 class="text-2xl font-bold mb-4">About Me</h2>
+                <p class="text-gray-700">
+                I am Gennadii Khudiakov, a developer with 12 years of commercial experience. I specialize in building scalable software solutions, 
+                from MVPs to high-load infrastructures with clusters of microservices. My primary expertise lies in Ruby on Rails, 
+                but I am equally proficient in JavaScript and Python.
+                </p>
+            </div>
+        
+            <div class="languages mb-6">
+                <h2 class="text-xl font-semibold mb-2">Languages</h2>
+                <ul class="list-disc pl-6 text-gray-700">
+                    <li>English: C1</li>
+                    <li>Russian: Native</li>
+                    <li>Ukrainian: B2</li>
+                    <li>Georgian: A1</li>
+                </ul>
+            </div>
+        
+            <div class="contacts">
+                <h2 class="text-xl font-semibold mb-2">Contacts</h2>
+                <ul class="list-disc pl-6 text-blue-500">
+                    <li>
+                        <a href="https://github.com/HooFoo" target="_blank" class="hover:underline">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/HooFoo" target="_blank" class="hover:underline">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://www.upwork.com/freelancers/~0126f34223e34ff4e0" target="_blank" class="hover:underline">Upwork</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
         <section id="work-experience" class="hidden bg-white shadow p-4">
             <h2 class="text-2xl font-bold mb-4">Work Experience</h2>
   
@@ -162,13 +200,57 @@
         </section>
 
         <section id="skills" class="hidden bg-white shadow p-4">
-          <h3 class="text-lg font-semibold">Skills</h3>
-          <ul class="mt-4 list-disc list-inside text-gray-700">
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Docker & Kubernetes</li>
-          </ul>
+            <h2 class="text-2xl font-bold mb-4">Skills</h2>
+            <div class="skill-category mb-6">
+                <h3 class="text-xl font-semibold mb-2">Development</h3>
+                <ul class="list-disc pl-6 text-gray-700"></ul>
+                <li>Languages: Ruby, Crystal, Python, JavaScript, Java, C#, C++, CLR C++</li>
+                <li>Frameworks: Ruby on Rails, Spring MVC, Sinatra, Backbone.js, AngularJS, React, Vue</li>
+                <li>Frontend: HTML, CSS3, SVG, AJAX, JQuery, Thymeleaf, D3.js</li>
+                <li>Backend: JavaEE, REST, SOAP, XSL, XSD, XQuery</li>
+                <li>Database: PostgreSQL, MariaDB, MongoDB</li>
+                <li>Testing: RSpec, JUnit</li>
+                </ul>
+            </div>
+
+            <div class="skill-category mb-6">
+                <h3 class="text-xl font-semibold mb-2">Infrastructure and Administration</h3>
+                <ul class="list-disc pl-6 text-gray-700">
+                <li>Containerization: Docker</li>
+                <li>Orchestration: Kubernetes</li>
+                <li>Web Servers: Nginx, Unicorn, Puma</li>
+                <li>CI/CD: Capistrano, Git, Git-flow</li>
+                <li>Other: Varnish, Resque</li>
+                </ul>
+            </div>
+
+            <div class="skill-category mb-6">
+                <h3 class="text-xl font-semibold mb-2">Management</h3>
+                <ul class="list-disc pl-6 text-gray-700">
+                <li>Team Management: Partial management experience with development teams</li>
+                <li>Workflow Optimization: Git-flow, CI/CD pipelines, testing stages</li>
+                <li>Architectural Decisions: Designing scalable solutions and integrations</li>
+                </ul>
+            </div>
+
+            <div class="skill-category mb-6">
+                <h3 class="text-xl font-semibold mb-2">Design Patterns and Methodologies</h3>
+                <ul class="list-disc pl-6 text-gray-700">
+                <li>SOLID Principles</li>
+                <li>Domain-Driven Design (DDD)</li>
+                <li>Agile Development</li>
+                <li>BPMN (Process Modeling)</li>
+                </ul>
+            </div>
+
+            <div class="skill-category mb-6">
+                <h3 class="text-xl font-semibold mb-2">Soft Skills</h3>
+                <ul class="list-disc pl-6 text-gray-700">
+                <li>Problem-Solving</li>
+                <li>Cross-functional Team Collaboration</li>
+                <li>Adaptability to New Technologies</li>
+                </ul>
+            </div>
         </section>
       </div>
     </div>
