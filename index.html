@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <script src="https://cdn-tailwindcss.vercel.app/"></script>
   <style>
     body {
@@ -21,7 +22,7 @@
         <img src="/photo.jpg" alt="Gennadii Khudiakov" class="w-32 h-32 rounded-full border border-gray-300">
         <div class="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
           <h1 class="text-2xl font-extrabold">Gennadii Khudiakov</h1>
-          <p class="text-lg font-medium text-gray-600">Developer with 12+ years of experience</p>
+          <p class="text-lg font-medium text-gray-600">Ruby developer with 12+ years of experience</p>
           <p class="text-sm text-gray-500">Master's degree in Information Technology (2014) - <a href="https://etu.ru/" class="text-blue-500 hover:underline">ETU "LETI"</a></p>
         </div>
       </div>
@@ -33,14 +34,36 @@
       <!-- Main Column -->
       <div class="w-full md:w-1/3 bg-white shadow p-4">
         <h2 class="text-xl font-semibold">Quick Links</h2>
-
+      
         <ul class="mt-4 space-y-2">
-        <li><a href="#" class="text-blue-500 hover:underline" onclick="toggleSection('common-info')">About me</a></li>
-          <li><a href="#" class="text-blue-500 hover:underline" onclick="toggleSection('work-experience')">Work Experience</a></li>
-          <li><a href="#" class="text-blue-500 hover:underline" onclick="toggleSection('education')">Education</a></li>
-          <li><a href="#" class="text-blue-500 hover:underline" onclick="toggleSection('skills')">Skills</a></li>
+          <li>
+            <a href="#" class="text-blue-500 hover:underline flex items-center" onclick="toggleSection('common-info')">
+              <i class="fas fa-user mr-2"></i> About me
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-blue-500 hover:underline flex items-center" onclick="toggleSection('work-experience')">
+              <i class="fas fa-briefcase mr-2"></i> Work Experience
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-blue-500 hover:underline flex items-center" onclick="toggleSection('education')">
+              <i class="fas fa-graduation-cap mr-2"></i> Education
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-blue-500 hover:underline flex items-center" onclick="toggleSection('skills')">
+              <i class="fas fa-tools mr-2"></i> Skills
+            </a>
+          </li>
         </ul>
-      </div>
+      
+        <div class="mt-6">
+          <a href="#" class="text-blue-500 hover:underline flex items-center" onclick="saveAsPDF()">
+            <i class="fas fa-file-pdf mr-2"></i> Save as PDF
+          </a>
+        </div>
+      </div>    
 
       <!-- Expandable Panels -->
       <div id="panel-container" class="w-full md:w-2/3 mt-4 md:mt-0 md:ml-4">
@@ -76,134 +99,11 @@
                     <li>
                         <a href="https://www.upwork.com/freelancers/~0126f34223e34ff4e0" target="_blank" class="hover:underline">Upwork</a>
                     </li>
+                    <li>
+                        <a href="mailto:hoofoo@yandex.ru" target="_blank" class="hover:underline">E-Mail<b class="hidden">: HooFoo@yandex.ru</b></a>
+                    </li>
                 </ul>
             </div>
-        </section>
-
-        <section id="work-experience" class="hidden bg-white shadow p-4">
-            <h2 class="text-2xl font-bold mb-4">Work Experience</h2>
-  
-            <div class="mb-6">
-              <h3 class="font-bold text-lg">Personal Business Goals</h3>
-              <p class="text-sm text-gray-600">May 2024 – Present</p>
-              <p>I am focusing on personal business goals, managing two businesses while driving people with my big car.</p>
-            </div>
-            
-            <div class="mb-6">
-              <h3 class="font-bold text-lg">Core Team Engineer at <a href="https://brightsec.com/" target="_blank" class="text-blue-500 hover:underline">Bright</a></h3>
-              <p class="text-sm text-gray-600">December 2022 – May 2024</p>
-              <ul class="list-disc pl-6">
-                <li>Designed and implemented server-side binary applications, enhancing system efficiency and scalability.</li>
-                <li>Spearheaded code refactoring projects, improving maintainability and aligning with SOLID principles.</li>
-                <li>Improved test coverage by over 30%, reducing production bugs and improving system reliability.</li>
-              </ul>
-              <p class="mt-2 text-sm"><strong>Stack:</strong> Crystal Lang, Docker, Kubernetes</p>
-            </div>
-            
-            <div class="mb-6">
-              <h3 class="font-bold text-lg">Ruby on Rails Developer at <a href="https://ankipro.net/" target="_blank" class="text-blue-500 hover:underline">AnkiPro</a></h3>
-              <p class="text-sm text-gray-600">April 2022 – September 2022</p>
-              <ul class="list-disc pl-6">
-                <li>Delivered key features for a high-demand mobile app, significantly improving app speed.</li>
-                <li>Applied domain-driven design principles to improve codebase flexibility and adaptability for future features.</li>
-              </ul>
-              <p class="mt-2 text-sm"><strong>Stack:</strong> Ruby on Rails, PostgreSQL, React Native</p>
-            </div>
-            
-            <div class="mb-6">
-              <h3 class="font-bold text-lg">Ruby on Rails Engineer at <a href="https://www.sphereinc.com/" target="_blank" class="text-blue-500 hover:underline">Sphere</a></h3>
-              <p class="text-sm text-gray-600">January 2021 – January 2022</p>
-              <ul class="list-disc pl-6">
-                <li>Architected and implemented scalable infrastructure for <a href="https://www.bppulse.co.uk/" target="_blank" class="text-blue-500 hover:underline">BP Pulse</a>, supporting thousands of users daily.</li>
-                <li>Collaborated cross-functionally to integrate microservices and deliver a seamless user experience.</li>
-              </ul>
-              <p class="mt-2 text-sm"><strong>Stack:</strong> Ruby on Rails, PostgreSQL, Kubernetes, Docker, React</p>
-            </div>
-            
-            <div class="mb-6">
-              <h3 class="font-bold text-lg">Ruby on Rails Engineer at <a href="https://taxdome.com" target="_blank" class="text-blue-500 hover:underline">TaxDome</a></h3>
-              <p class="text-sm text-gray-600">January 2019 – December 2020</p>
-              <ul>
-                <li>Developed full-stack solutions for accounting software.</li>
-                <li>Initial implementation of main app feature - automated clients workflows.</li>
-              </ul>
-              <p class="mt-2 text-sm"><strong>Stack:</strong> Ruby on Rails, PostgreSQL/MariaDB, React, Vue</p>
-            </div>
-            
-            <div class="mb-6">
-              <h3 class="font-bold text-lg">Ruby on Rails Engineer at <a href="https://voltmobi.com" target="_blank" class="text-blue-500 hover:underline">VoltMobi LLC</a></h3>
-              <p class="text-sm text-gray-600">January 2018 – December 2018</p>
-              <ul class="list-disc pl-6">
-                <li>Built an internal analytics service for <a href="https://taxi.yandex.com" target="_blank" class="text-blue-500 hover:underline">Yandex.Taxi</a>, optimizing backend and admin panel performance.</li>
-                <li>Developed and deployed a Telegram bot, increasing automation and improving operational efficiency.</li>
-                <li>Reduced database query load by 35% through optimized PostgreSQL indexing and N+1 problems resolved.</li>
-                <li>I've prepared the application to transition from operating on a VPS to functioning within a Kubernetes cluster.</li>
-              </ul>
-              <p class="mt-2 text-sm"><strong>Stack:</strong> Ruby on Rails, PostgreSQL, AngularJS, Docker</p>
-            </div>
-            
-            <div class="mb-6">
-              <h3 class="font-bold text-lg">Ruby on Rails Developer (Freelance)</h3>
-              <p class="text-sm text-gray-600">December 2016 – December 2017</p>
-              <p>Worked on projects such as <a href="http://stashstore.ru" target="_blank">stashstore.ru</a> and <a href="http://verito.ru" target="_blank">verito.ru</a>.</p>
-            </div>
-            
-            <div class="mb-6">
-              <h3 class="font-bold text-lg">Ruby on Rails Developer at <a href="https://www.win-win.software/" target="_blank" class="text-blue-500 hover:underline">DDG LLC</a></h3>
-              <p class="text-sm text-gray-600">February 2016 – November 2016</p>
-              <ul>
-                <li>Developed CMS and API solutions for <a href="https://disney.ru" target="_blank" class="text-blue-500 hover:underline">Disney.ru</a>, ensuring seamless content delivery and user engagement.</li>
-                <li>Changed MongoDB workflows, enhancing data storage scalability and flexibility.</li>
-              </ul>
-              <p class="mt-2 text-sm"><strong>Stack:</strong> Ruby on Rails, MongoDB, Backbone.js</p>
-            </div>
-            
-            <div class="mb-6">
-              <h3 class="font-bold text-lg">Java Developer at <a href="https://www.marathonbet.com" target="_blank" class="text-blue-500 hover:underline">Marathonbet.com</a></h3>
-              <p class="text-sm text-gray-600">October 2015 – December 2015</p>
-              <ul>
-                <li>Implemented backend solutions using Java Servlets and Maven, ensuring system stability and scalability.</li>
-                <li>Collaborated on the development of enterprise-grade tools to support core business functions.</li>
-              </ul>
-            </div>
-            
-            <div class="mb-6">
-              <h3 class="font-bold text-lg">Java EE Developer at <a href="https://www.t-systems.com/de/en" target="_blank" class="text-blue-500 hover:underline">T-Systems CIS</a></h3>
-              <p class="text-sm text-gray-600">August 2014 – August 2015</p>
-              <ul>
-                <li>Built and deployed BPMN-based web services, improving process automation for enterprise clients.</li>
-              </ul>
-              <p class="mt-2 text-sm"><strong>Stack:</strong> JavaEE, Spring MVC, SOAP</p>
-            </div>
-            
-            <div class="mb-6">
-              <h3 class="font-bold text-lg">Junior Java EE Developer at <a href="https://e-ngineers.com/" target="_blank" class="text-blue-500 hover:underline">E-ngineers</a></h3>
-              <p class="text-sm text-gray-600">October 2013 – August 2014</p>
-              <p>Developed risk management solutions for banks, minimizing operational risks for clients.</p>
-              <p class="mt-2 text-sm"><strong>Stack:</strong> JavaEE, Hibernate, PostgreSQL</p>
-            </div>
-            
-            <div class="mb-6">
-              <h3 class="font-bold text-lg">Junior C#/C++ Developer at Main System</h3>
-              <p class="text-sm text-gray-600">May 2012 – September 2013</p>
-              <ul>
-                <li>Developed and maintained desktop applications with advanced browser-like interfaces, supporting user customization.</li>
-                <li>Integrated Google V8 for enhanced scripting performance.</li>
-              </ul>
-              <p class="mt-2 text-sm"><strong>Stack:</strong> C++, C#, Google V8</p>
-            </div>
-        </section>
-
-        <section id="education" class="hidden bg-white shadow p-4">
-          <h3 class="text-lg font-semibold">Education</h3>
-          <p class="mt-4 text-gray-700">Master's degree in Information Technologies (2014) - <a href="https://etu.ru/en/university/" class="text-blue-500 hover:underline">ETU "LETI"</a></p>
-        <section id="certification" class="hidden bg-white shadow p-4">
-            <h3 class="text-lg font-semibold">Certification</h3>
-            <div class="mt-4">
-                <img src="/cert_cv.png" alt="Java SE 7 Certification" class="w-full h-auto">
-                <p class="mt-2 text-gray-700">Java SE 7</p>
-            </div>
-        </section>
         </section>
 
         <section id="skills" class="hidden bg-white shadow p-4">
@@ -261,6 +161,132 @@
                 </ul>
             </div>
         </section>
+
+        <section id="education" class="hidden bg-white shadow p-4">
+          <h3 class="text-lg font-semibold">Education</h3>
+          <p class="mt-4 text-gray-700">Master's degree in Information Technologies (2014) - <a href="https://etu.ru/en/university/" class="text-blue-500 hover:underline">ETU "LETI"</a></p>
+        <section id="certification" class="hidden bg-white shadow p-4">
+            <h3 class="text-lg font-semibold">Certification</h3>
+            <div class="mt-4">
+                <img src="/cert_cv.png" alt="Java SE 7 Certification" class="w-full h-auto">
+                <p class="mt-2 text-gray-700">Java SE 7</p>
+            </div>
+        </section>
+        </section>
+
+        <section id="work-experience" class="hidden bg-white shadow p-4">
+            <h2 class="text-2xl font-bold mb-4">Work Experience</h2>
+  
+            <div class="mb-6">
+              <h3 class="font-bold text-lg">Personal Business Goals</h3>
+              <p class="text-sm text-gray-600">May 2024 – Present</p>
+              <p>I am focusing on personal business goals, managing two businesses while driving people with my big car.</p>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-lg">Core Team Engineer at <a href="https://brightsec.com/" target="_blank" class="text-blue-500 hover:underline">Bright</a></h3>
+              <p class="text-sm text-gray-600">December 2022 – May 2024</p>
+              <ul class="list-disc pl-6">
+                <li>Designed and implemented server-side binary applications, enhancing system efficiency and scalability.</li>
+                <li>Spearheaded code refactoring projects, improving maintainability and aligning with SOLID principles.</li>
+                <li>Improved test coverage by over 30%, reducing production bugs and improving system reliability.</li>
+              </ul>
+              <p class="mt-2 text-sm"><strong>Stack:</strong> Crystal Lang, Docker, Kubernetes</p>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-lg">Ruby on Rails Developer at <a href="https://ankipro.net/" target="_blank" class="text-blue-500 hover:underline">AnkiPro</a></h3>
+              <p class="text-sm text-gray-600">April 2022 – September 2022</p>
+              <ul class="list-disc pl-6">
+                <li>Delivered key features for a high-demand mobile app, significantly improving app speed.</li>
+                <li>Applied domain-driven design principles to improve codebase flexibility and adaptability for future features.</li>
+              </ul>
+              <p class="mt-2 text-sm"><strong>Stack:</strong> Ruby on Rails, PostgreSQL, React Native</p>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-lg">Ruby on Rails Engineer at <a href="https://www.sphereinc.com/" target="_blank" class="text-blue-500 hover:underline">Sphere</a></h3>
+              <p class="text-sm text-gray-600">January 2021 – January 2022</p>
+              <ul class="list-disc pl-6">
+                <li>Architected and implemented scalable infrastructure for <a href="https://www.bppulse.co.uk/" target="_blank" class="text-blue-500 hover:underline">BP Pulse</a>, supporting thousands of users daily.</li>
+                <li>Collaborated cross-functionally to integrate microservices and deliver a seamless user experience.</li>
+              </ul>
+              <p class="mt-2 text-sm"><strong>Stack:</strong> Ruby on Rails, PostgreSQL, Kubernetes, Docker, React</p>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-lg">Ruby on Rails Engineer at <a href="https://taxdome.com" target="_blank" class="text-blue-500 hover:underline">TaxDome</a></h3>
+              <p class="text-sm text-gray-600">January 2019 – December 2020</p>
+              <ul class="list-disc pl-6">
+                <li>Developed full-stack solutions for accounting software.</li>
+                <li>Initial implementation of main app feature - automated clients workflows.</li>
+              </ul>
+              <p class="mt-2 text-sm"><strong>Stack:</strong> Ruby on Rails, PostgreSQL/MariaDB, React, Vue</p>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-lg">Ruby on Rails Engineer at <a href="https://voltmobi.com" target="_blank" class="text-blue-500 hover:underline">VoltMobi LLC</a></h3>
+              <p class="text-sm text-gray-600">January 2018 – December 2018</p>
+              <ul class="list-disc pl-6">
+                <li>Built an internal analytics service for <a href="https://taxi.yandex.com" target="_blank" class="text-blue-500 hover:underline">Yandex.Taxi</a>, optimizing backend and admin panel performance.</li>
+                <li>Developed and deployed a Telegram bot, increasing automation and improving operational efficiency.</li>
+                <li>Reduced database query load by 35% through optimized PostgreSQL indexing and N+1 problems resolved.</li>
+                <li>I've prepared the application to transition from operating on a VPS to functioning within a Kubernetes cluster.</li>
+              </ul>
+              <p class="mt-2 text-sm"><strong>Stack:</strong> Ruby on Rails, PostgreSQL, AngularJS, Docker</p>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-lg">Ruby on Rails Developer (Freelance)</h3>
+              <p class="text-sm text-gray-600">December 2016 – December 2017</p>
+              <p>Worked on projects such as <a href="http://stashstore.ru" target="_blank">stashstore.ru</a> and <a href="http://verito.ru" target="_blank">verito.ru</a>.</p>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-lg">Ruby on Rails Developer at <a href="https://www.win-win.software/" target="_blank" class="text-blue-500 hover:underline">DDG LLC</a></h3>
+              <p class="text-sm text-gray-600">February 2016 – November 2016</p>
+              <ul class="list-disc pl-6">
+                <li>Developed CMS and API solutions for <a href="https://disney.ru" target="_blank" class="text-blue-500 hover:underline">Disney.ru</a>, ensuring seamless content delivery and user engagement.</li>
+                <li>Changed MongoDB workflows, enhancing data storage scalability and flexibility.</li>
+              </ul>
+              <p class="mt-2 text-sm"><strong>Stack:</strong> Ruby on Rails, MongoDB, Backbone.js</p>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-lg">Java Developer at <a href="https://www.marathonbet.com" target="_blank" class="text-blue-500 hover:underline">Marathonbet.com</a></h3>
+              <p class="text-sm text-gray-600">October 2015 – December 2015</p>
+              <ul class="list-disc pl-6">
+                <li>Implemented backend solutions using Java Servlets and Maven, ensuring system stability and scalability.</li>
+                <li>Collaborated on the development of enterprise-grade tools to support core business functions.</li>
+              </ul>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-lg">Java EE Developer at <a href="https://www.t-systems.com/de/en" target="_blank" class="text-blue-500 hover:underline">T-Systems CIS</a></h3>
+              <p class="text-sm text-gray-600">August 2014 – August 2015</p>
+              <ul class="list-disc pl-6">
+                <li>Built and deployed BPMN-based web services, improving process automation for enterprise clients.</li>
+              </ul>
+              <p class="mt-2 text-sm"><strong>Stack:</strong> JavaEE, Spring MVC, SOAP</p>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-lg">Junior Java EE Developer at <a href="https://e-ngineers.com/" target="_blank" class="text-blue-500 hover:underline">E-ngineers</a></h3>
+              <p class="text-sm text-gray-600">October 2013 – August 2014</p>
+              <p>Developed risk management solutions for banks, minimizing operational risks for clients.</p>
+              <p class="mt-2 text-sm"><strong>Stack:</strong> JavaEE, Hibernate, PostgreSQL</p>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-lg">Junior C#/C++ Developer at Main System</h3>
+              <p class="text-sm text-gray-600">May 2012 – September 2013</p>
+              <ul class="list-disc pl-6">
+                <li>Developed and maintained desktop applications with advanced browser-like interfaces, supporting user customization.</li>
+                <li>Integrated Google V8 for enhanced scripting performance.</li>
+              </ul>
+              <p class="mt-2 text-sm"><strong>Stack:</strong> C++, C#, Google V8</p>
+            </div>
+        </section>
       </div>
     </div>
   </main>
@@ -275,6 +301,12 @@
         selectedSection.classList.remove('hidden');
       }
     }
+    function saveAsPDF() {
+        const sections = document.querySelectorAll('.hidden');
+        sections.forEach(section => section.classList.remove('hidden'));
+        window.print();
+        sections.forEach(section => section.classList.add('hidden'));
+  }
   </script>
 </body>
 </html>
