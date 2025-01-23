@@ -241,10 +241,18 @@
         function saveAsPDF() {
             const sections = document.querySelectorAll('.hidden');
             sections.forEach(section => section.classList.remove('hidden'));
-            window.addEventListener("afterprint", () => {            
+            let closeSelectedSection = () => {
                 sections.forEach(section => section.classList.add('hidden'));
-            });
+            };
             window.print();
+            if (isMobileBrowser()) {
+                setTimeout(closeSelectedSection, 1000);
+            } else {
+                closeSelectedSection();
+            }
+        }
+        function isMobileBrowser() {
+            return /Mobi|Android|iPhone|iPad|iPod|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent);
         }
     </script>
 </body>
