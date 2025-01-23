@@ -241,10 +241,10 @@
         function saveAsPDF() {
             const sections = document.querySelectorAll('.hidden');
             sections.forEach(section => section.classList.remove('hidden'));
-            setTimeout(() => { 
-                window.print();
+            window.addEventListener("afterprint", () => {            
                 sections.forEach(section => section.classList.add('hidden'));
-            }, 500); // Wait for the browser to render the hidden sections
+            });
+            window.print();
         }
     </script>
 </body>
