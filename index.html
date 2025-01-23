@@ -22,7 +22,7 @@
 </head>
 <body class="bg-gray-100 text-gray-900">
     <header class="bg-white shadow">
-        <div class="container mx-auto p-4">
+        <div class="container mx-auto p-4 print:p-2">
             <div class="flex flex-col items-center md:flex-row md:justify-between">
                 <img src="/photo.png" alt="Gennadii Khudiakov" class="w-32 h-32 rounded-full border border-gray-300">
                 <div class="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
@@ -34,7 +34,7 @@
         </div>
     </header>
     
-    <main class="container mx-auto mt-6 p-4">
+    <main class="container mx-auto mt-6 p-4 print:mt-0 print:p-0">
         <div class="flex flex-col md:flex-row">
             <!-- Main Column -->
             <div class="w-full md:w-1/3 bg-white shadow p-4 print:hidden">
@@ -73,9 +73,9 @@
             <!-- Expandable Panels -->
             <div id="panel-container" class="w-full md:w-2/3 mt-4 md:mt-0 md:ml-4">
                 <section id="common-info" class="bg-white shadow p-4">
-                    <div class="about-me mb-6">
-                        <h2 class="text-2xl font-bold mb-4">About Me</h2>
-                        <p class="text-gray-700">
+                    <div class="about-me mb-6 print:mb-4">
+                        <h2 class="text-2xl font-bold mb-4 print:text-xl">About Me</h2>
+                        <p class="text-gray-700 print:text-sm">
                             I am Gennadii Khudiakov, a developer with 12+ years of commercial experience. I specialize in building scalable software solutions, 
                             from MVPs to high-load infrastructures with clusters of microservices. My primary expertise lies in Ruby on Rails, 
                             but I am equally proficient in JavaScript and Python.
@@ -83,7 +83,7 @@
                     </div>
                     
                     <div class="languages mb-6">
-                        <h2 class="text-xl font-semibold mb-2">Languages</h2>
+                        <h3 class="text-xl font-semibold mb-2">Languages</h2>
                         <ul class="list-none pl-6 text-gray-700 print:inline-flex justify-between">
                             <li class="print:ml-1">
                                 <img src="https://flagsapi.com/GB/flat/24.png" alt="English Flag" class="inline-block mr-2  align-middle"> 
@@ -105,20 +105,20 @@
                     </div>
                     
                     <div class="contacts">
-                        <h2 class="text-xl font-semibold mb-2">Contacts</h2>
-                        <ul class="list-none pl-6 text-blue-500">
+                        <h3 class="text-xl font-semibold mb-2">Contacts</h2>
+                        <ul class="list-none pl-6 text-blue-500 print:inline-flex ">
                             <li class="print:hidden"><i class="fab fa-github mr-2"></i><a href="https://github.com/HooFoo" target="_blank" class="hover:underline">GitHub</a></li>
                             <li class="print:hidden"><i class="fab fa-linkedin mr-2"></i><a href="https://www.linkedin.com/in/HooFoo" target="_blank" class="hover:underline">LinkedIn</a></li>
                             <li class="print:hidden"><i class="fas fa-briefcase mr-2"></i><a href="https://www.upwork.com/freelancers/~0126f34223e34ff4e0" target="_blank" class="hover:underline">Upwork</a></li>
-                            <li><i class="fas fa-envelope mr-2"></i><a href="mailto:hoofoo@yandex.ru" target="_blank" class="hover:underline">E-Mail<b class="hidden print:inline"> HooFoo@yandex.ru</b></a></li>
-                            <li><i class="fab fa-telegram-plane mr-2"></i><a href="https://t.me/random4096" target="_blank" class="hover:underline">Telegram<b class="hidden print:inline"> random4096</b></a></li>
+                            <li class="print:text-sm print:ml-4"><i class="fas fa-envelope mr-2"></i><a href="mailto:hoofoo@yandex.ru" target="_blank" class="hover:underline">E-Mail<b class="hidden print:inline"> HooFoo@yandex.ru</b></a></li>
+                            <li class="print:text-sm print:ml-4"><i class="fab fa-telegram-plane mr-2"></i><a href="https://t.me/random4096" target="_blank" class="hover:underline">Telegram<b class="hidden print:inline"> random4096</b></a></li>
                         </ul>
                     </div>
                 </section>              
                 
                 <section id="skills" class="hidden bg-white shadow p-4">
-                    <h2 class="text-2xl font-bold mb-4">Skills</h2>
-                    <div class="skill-category mb-6">
+                    <h2 class="text-2xl font-bold mb-4  print:text-xl">Skills</h2>
+                    <div class="skill-category mb-6 print:mb-2">
                         <h3 class="text-xl font-semibold mb-2 print:text-lg">Development</h3>
                         <ul class="list-disc pl-6 text-gray-700 print:text-sm">
                             <li>Languages: Ruby, Crystal, Python, JavaScript</li>
@@ -129,7 +129,7 @@
                         </ul>
                     </div>
                     
-                    <div class="skill-category mb-6">
+                    <div class="skill-category mb-6 print:mb-2">
                         <h3 class="text-xl font-semibold mb-2 print:text-lg">Infrastructure and Administration</h3>
                         <ul class="list-disc pl-6 text-gray-700 print:text-sm">
                             <li>Containerization and Orchestration: Docker, Kubernetes</li>
@@ -138,7 +138,7 @@
                         </ul>
                     </div>
                     
-                    <div class="skill-category mb-6">
+                    <div class="skill-category mb-6 print:mb-2">
                         <h3 class="text-xl font-semibold mb-2 print:text-lg">Management</h3>
                         <ul class="list-disc pl-6 text-gray-700 print:text-sm">
                             <li>Team Management: Partial management experience with development teams of 2-4 peoples</li>
@@ -146,8 +146,8 @@
                             <li>Architectural Decisions: Designing scalable solutions and integrations</li>
                         </ul>
                     </div>
-                    
-                    <div class="skill-category mb-6">
+                    <br class="hidden print:block"/>
+                    <div class="skill-category mb-6 print:mb-2">
                         <h3 class="text-xl font-semibold mb-2 print:text-lg">Design Patterns and Methodologies</h3>
                         <ul class="list-disc pl-6 text-gray-700 print:text-sm">
                             <li>SOLID Principles</li>
@@ -157,7 +157,7 @@
                         </ul>
                     </div>
                     
-                    <div class="skill-category mb-6">
+                    <div class="skill-category mb-6 print:mb-0">
                         <h3 class="text-xl font-semibold mb-2 print:text-lg">Soft Skills</h3>
                         <ul class="list-disc pl-6 text-gray-700 print:text-sm">
                             <li>Problem-Solving</li>
@@ -168,17 +168,17 @@
                 </section>
                 
                 <section id="education" class="hidden bg-white shadow p-4">
-                    <h3 class="text-lg font-semibold">Education</h3>
-                    <p class="mt-4 text-gray-700">Master's degree in Information Technologies (2014) - <a href="https://etu.ru/en/university/" class="text-blue-500 hover:underline">ETU "LETI"</a></p>
+                    <h3 class="text-2xl font-bold mb-4  print:text-xl">Education</h3>
+                    <p class="mt-4 text-gray-700 print:text-sm">Master's degree in Information Technologies (2014) - <a href="https://etu.ru/en/university/" class="text-blue-500 hover:underline">ETU "LETI"</a></p>
                     <h3 class="text-lg font-semibold mt-4">Certification</h3>
-                    <div class="relative mt-4">
+                    <div class="relative mt-4 print:mt-2">
                         <img src="/cert_cv.png" alt="Java SE 7 Certification" class="w-full h-auto max-w-xs print:w-8 print:inline">
-                        <p class="screen:hidden print:inline-block">Java SE 7 Certification</p>
+                        <p class="hidden print:inline-block print:text-sm">Java SE 7 Certification</p>
                     </div>
                 </section>
                 
                 <section id="work-experience" class="hidden bg-white shadow p-4">
-                    <h2 class="text-2xl font-bold mb-4">Work Experience</h2>
+                    <h2 class="text-2xl font-bold mb-4 print:text-xl">Work Experience</h2>
                 
                     <div class="mb-6">
                         <h3 class="font-bold text-lg">Crystal Developer</h3>
@@ -192,7 +192,7 @@
 
                     <div class="mb-6">
                         <h3 class="font-bold text-lg">Ruby on Rails Developer</h3>
-                        <p class="text-sm text-gray-600">2016 – 2024</p>
+                        <p class="text-sm text-gray-600">2016 – 2025</p>
                         <ul class="list-disc pl-6 print:text-sm">
                             <li><a target="_blank" href="https://taxdome.com/"><strong>Accounting Software:</strong></a> Built full-stack solutions and automated workflows, streamlining client operations. Designed and implemented key product feature.</li>
                             <li><a target="_blank" href="https://www.bppulse.co.uk/"><strong>Scalable Infrastructure:</strong></a> Designed and implemented the architecture and infrastructure for BP Pulse, a large-scale project aimed at facilitating the transition to electric vehicles. Contributed to the overall system design and developed several key microservices, supporting thousands of daily users.</li>
