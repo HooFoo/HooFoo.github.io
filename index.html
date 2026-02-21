@@ -46,7 +46,7 @@
                     <i class="fas fa-rocket w-5"></i> Portfolio
                 </button>
                 <button onclick="showTab('skills')" id="btn-skills" class="sidebar-link w-full text-left px-4 py-3 rounded-l-xl font-semibold flex items-center gap-3 transition-all text-slate-600 hover:bg-slate-50">
-                    <i class="fas fa-brain w-5"></i> Stack & AI
+                    <i class="fas fa-brain w-5"></i> Stack & Skills
                 </button>
                 <button onclick="showTab('experience')" id="btn-experience" class="sidebar-link w-full text-left px-4 py-3 rounded-l-xl font-semibold flex items-center gap-3 transition-all text-slate-600 hover:bg-slate-50">
                     <i class="fas fa-history w-5"></i> Career
@@ -263,28 +263,119 @@
                 </div>
             </section>
 
-            <section id="skills" class="tab-content">
-                <h2 class="text-3xl font-800 mb-8 tracking-tight">Technology Cluster</h2>
-                <div class="space-y-8">
-                    <div>
-                        <h4 class="text-xs uppercase font-bold text-slate-400 tracking-widest mb-4">Core Tech Stack</h4>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="p-4 bg-white rounded-2xl border border-slate-100 text-center"><i class="fas fa-gem text-red-500 mb-2"></i><div class="text-xs font-bold">Ruby / Rails</div></div>
-                            <div class="p-4 bg-white rounded-2xl border border-slate-100 text-center"><i class="fab fa-react text-blue-400 mb-2"></i><div class="text-xs font-bold">React / Vue</div></div>
-                            <div class="p-4 bg-white rounded-2xl border border-slate-100 text-center"><i class="fas fa-dharmachakra text-blue-600 mb-2"></i><div class="text-xs font-bold">Kubernetes</div></div>
-                            <div class="p-4 bg-white rounded-2xl border border-slate-100 text-center"><i class="fas fa-database text-green-500 mb-2"></i><div class="text-xs font-bold">PostgreSQL</div></div>
+            <section id="skills" class="tab-content mt-16 print:mt-8">
+                <h2 class="text-3xl font-800 mb-10 tracking-tight uppercase border-b-2 border-slate-900 pb-4 print:text-xl print:mb-4">
+                    Technical Arsenal & Product Leadership
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 print:grid-cols-1 print:gap-y-6">
+                    
+                    <div class="print:border-b print:border-slate-100 print:pb-2">
+                        <h3 class="text-blue-600 font-bold uppercase tracking-widest text-xs mb-4 print:text-slate-900 print:mb-1">
+                            AI Architect & Agentic Engineering
+                        </h3>
+                        <div class="flex flex-wrap gap-2 print:block text-sm">
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">Multimodal LLMs (Gemini focus)</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">Azure AI Foundation</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">RAG (Retrieval-Augmented Generation)</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">Agentic Orchestration</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">Inference Optimization</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">LangChain</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">Vector DBs (Pinecone, Pgvector)</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">Prompt Engineering & Tuning</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">MCP, Tools Calling</span>
+                            
+                            <p class="hidden print:block text-slate-800 leading-tight">
+                                <b>AI:</b> Multimodal LLMs, Gemini Integration, Azure AI Foundation, RAG (Retrieval-Augmented Generation), Agentic Workflows, Inference Cost/Efficiency Optimization, LangChain, Vector Databases, MCP, Tools Calling.
+                            </p>
                         </div>
                     </div>
-                    <div>
-                        <h4 class="text-xs uppercase font-bold text-slate-400 tracking-widest mb-4">AI Proficiency</h4>
-                        <div class="bg-white p-6 rounded-3xl border border-slate-100 space-y-4 text-sm text-slate-600">
-                            <p><i class="fas fa-check-circle text-blue-500 mr-2"></i> Advanced Prompt Engineering & AI Scenario Design</p>
-                            <p><i class="fas fa-check-circle text-blue-500 mr-2"></i> RAG Pipelines & Multi-agent Orchestration</p>
-                            <p><i class="fas fa-check-circle text-blue-500 mr-2"></i> Integration of Generative Models into Business Workflows</p>
+
+                    <div class="print:border-b print:border-slate-100 print:pb-2">
+                        <h3 class="text-blue-600 font-bold uppercase tracking-widest text-xs mb-4 print:text-slate-900 print:mb-1">
+                            Engineering & Architecture
+                        </h3>
+                        <div class="flex flex-wrap gap-2 print:block text-sm">
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">Ruby on Rails / Django</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">TDD / BDD</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">Sidekiq / Celery</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">Python / Crystal Lang / PHP</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">DDD / Clean Arch</span>
+                            
+                            <p class="hidden print:block text-slate-800 leading-tight">
+                                <b>Backend:</b> Ruby on Rails, Django, Python, Crystal, PHP, TDD, BDD, Sidekiq, Celery, High-load Architecture Design, DDD, Microservices, PostgreSQL, Redis, Event-Driven Design.
+                            </p>
                         </div>
                     </div>
+
+                    <div class="print:border-b print:border-slate-100 print:pb-2">
+                        <h3 class="text-blue-600 font-bold uppercase tracking-widest text-xs mb-4 print:text-slate-900 print:mb-1">
+                            Infrastructure & DevOps
+                        </h3>
+                        <div class="flex flex-wrap gap-2 print:block text-sm">
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">K8s / Terraform / Azure</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">Docker Swarm & Compose</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">Kafka / RabbitMQ</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">CI/CD (GitLab, GitHub, Azure)</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-semibold">Nginx / Load Balancing</span>
+                            
+                            <p class="hidden print:block text-slate-800 leading-tight">
+                                <b>Infra:</b> Kubernetes, Terraform, Docker (Compose, Swarm), Azure Cloud Services, Kafka, RabbitMQ, Redis, CI/CD (GitHub Actions, GitLab CI, Azure Pipelines), Nginx, Load Balancing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 print:border-b print:border-slate-100 print:pb-2">
+                        <h3 class="text-blue-600 font-bold uppercase tracking-widest text-xs print:text-slate-900 print:mb-1">
+                            Discovery & Rapid TTM
+                        </h3>
+                        <div class="flex flex-wrap gap-2 print:block">
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-[11px] font-bold">Hypothesis Testing</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-[11px] font-bold">Time-to-Market Reduction</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-[11px] font-bold">Rapid Prototyping</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-[11px] font-bold">Sales Funnels</span>
+                            
+                            <p class="hidden print:block text-sm text-slate-800 leading-tight">
+                                Extreme Time-to-Market (TTM) reduction, Rapid Hypothesis Testing, MVP packaging, Sales Funnel optimization, Audience testing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 print:border-b print:border-slate-100 print:pb-2">
+                        <h3 class="text-blue-600 font-bold uppercase tracking-widest text-xs print:text-slate-900 print:mb-1">
+                            Technical Management
+                        </h3>
+                        <div class="flex flex-wrap gap-2 print:block">
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-[11px] font-bold">HLD / PRD / FRD</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-[11px] font-bold">Sprint Planning</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-[11px] font-bold">Backlog Management</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-[11px] font-bold">Scaling vs Simplicity</span>
+                            
+                            <p class="hidden print:block text-sm text-slate-800 leading-tight">
+                                Full-cycle documentation (HLD, PRD, FRD), Backlog & Sprint management, Gantt charts, Balancing Simple Arch vs Hi-load Scaling.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 print:border-b print:border-slate-100 print:pb-2">
+                        <h3 class="text-blue-600 font-bold uppercase tracking-widest text-xs print:text-slate-900 print:mb-1">
+                            Growth & Analytics
+                        </h3>
+                        <div class="flex flex-wrap gap-2 print:block">
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-[11px] font-bold">Unit Economics</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-[11px] font-bold">A/B Testing & Cohorts</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-[11px] font-bold">Metrics Collection</span>
+                            <span class="no-print px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-[11px] font-bold">Ad Campaigns</span>
+                            
+                            <p class="hidden print:block text-sm text-slate-800 leading-tight">
+                                Unit Economics, Metrics & Analytics, A/B Testing, Cohort analysis, Performance marketing & Ad campaigns.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
+
             <section id="experience" class="tab-content print:p-0 print:m-0">
                 <h2 class="text-3xl font-800 mb-10 tracking-tight uppercase border-b-2 border-slate-100 pb-4 print:text-2xl print:border-slate-300 print:mb-4">The Career Roadmap</h2>
                 
