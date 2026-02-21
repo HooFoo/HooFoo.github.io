@@ -43,7 +43,7 @@
                     <i class="fas fa-terminal w-5 text-blue-500"></i> Dashboard
                 </button>
                 <button onclick="showTab('projects')" id="btn-projects" class="sidebar-link w-full text-left px-4 py-3 rounded-l-xl font-semibold flex items-center gap-3 transition-all text-slate-600 hover:bg-slate-50">
-                    <i class="fas fa-rocket w-5"></i> Impact Portfolio
+                    <i class="fas fa-rocket w-5"></i> Portfolio
                 </button>
                 <button onclick="showTab('skills')" id="btn-skills" class="sidebar-link w-full text-left px-4 py-3 rounded-l-xl font-semibold flex items-center gap-3 transition-all text-slate-600 hover:bg-slate-50">
                     <i class="fas fa-brain w-5"></i> Stack & AI
@@ -101,34 +101,165 @@
                 </div>
             </section>
 
-            <section id="projects" class="tab-content">
-                <h2 class="text-3xl font-800 mb-8 tracking-tight">High-Impact Projects</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-                        <div class="flex justify-between items-start mb-4">
-                            <div class="bg-blue-50 text-blue-600 p-3 rounded-2xl"><i class="fas fa-robot text-xl"></i></div>
-                            <a href="https://chat-engine.ai" target="_blank" class="text-slate-300 hover:text-blue-500 transition"><i class="fas fa-external-link-alt"></i></a>
+            <section id="projects" class="tab-content mt-12 print:mt-6">
+                <h2 class="text-3xl font-800 mb-8 tracking-tight uppercase border-b-2 border-slate-900 pb-2 print:text-xl print:mb-4">
+                    Project Case Studies
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 print:grid-cols-1 print:gap-2">
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 flex flex-col print:p-0 print:border-0">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-800 text-slate-900 text-lg print:text-sm print:inline">Chat-Engine</h3>
+                            <span class="text-slate-400 text-xs font-mono print:text-slate-500 print:ml-2">#b2b-automation</span>
                         </div>
-                        <h3 class="text-lg font-bold mb-2 group-hover:text-blue-600 transition">Chat Engine AI</h3>
-                        <p class="text-sm text-slate-500 mb-4">Architected a no-code multi-tenant platform for AI chatbots. Implemented RAG pipelines and multi-agent reflection mechanisms.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-[10px] px-2 py-1 bg-slate-100 rounded-md font-bold uppercase tracking-tighter">Ruby</span>
-                            <span class="text-[10px] px-2 py-1 bg-slate-100 rounded-md font-bold uppercase tracking-tighter">LLMs/RAG</span>
-                            <span class="text-[10px] px-2 py-1 bg-slate-100 rounded-md font-bold uppercase tracking-tighter">K8s</span>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-                        <div class="flex justify-between items-start mb-4">
-                            <div class="bg-orange-50 text-orange-600 p-3 rounded-2xl"><i class="fas fa-layer-group text-xl"></i></div>
-                        </div>
-                        <h3 class="text-lg font-bold mb-2 group-hover:text-orange-600 transition">AnkiPro Scaling</h3>
-                        <p class="text-sm text-slate-500 mb-4">Refactored MVP backend to production-grade architecture. Enabled growth to 1M+ users with 93% test coverage and DDD.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-[10px] px-2 py-1 bg-slate-100 rounded-md font-bold uppercase tracking-tighter">RoR 7</span>
-                            <span class="text-[10px] px-2 py-1 bg-slate-100 rounded-md font-bold uppercase tracking-tighter">DDD</span>
-                            <span class="text-[10px] px-2 py-1 bg-slate-100 rounded-md font-bold uppercase tracking-tighter">PostgreSQL</span>
+                        <p class="text-[10px] text-blue-600 font-bold uppercase mb-3 print:mb-1 print:text-slate-700">Role: AI Solution Architect</p>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4 flex-grow print:hidden">
+                            B2B omni-channel platform with agentic behavior and NoCode integration. Automates complex customer communication flows.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 print:hidden text-[10px] font-bold text-slate-400">
+                            RESULT: Autonomously processing 3,000+ messages/day.
                         </div>
                     </div>
+
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 flex flex-col print:p-0 print:border-0">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-800 text-slate-900 text-lg print:text-sm print:inline">DocAutoBot</h3>
+                            <a href="https://docautobot.ru/" class="text-blue-600 hover:underline text-xs font-mono print:text-slate-500 print:ml-2">docautobot.ru</a>
+                        </div>
+                        <p class="text-[10px] text-blue-600 font-bold uppercase mb-3 print:mb-1 print:text-slate-700">Role: Solo Founder / Developer</p>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4 flex-grow print:hidden">
+                            Multimodal AI solution for automated document generation. High-speed product packaging and audience validation.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 print:hidden text-[10px] font-bold text-slate-400">
+                            RESULT: TTM: 3 days. First sale within 5 days from idea.
+                        </div>
+                    </div>
+
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 flex flex-col print:p-0 print:border-0">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-800 text-slate-900 text-lg print:text-sm print:inline">MIS Assistant</h3>
+                            <a href="https://github.com/HooFoo/mis_assistant" class="text-blue-600 hover:underline text-xs font-mono print:text-slate-500 print:ml-2">mis-assistant.ai</a>
+                        </div>
+                        <p class="text-[10px] text-blue-600 font-bold uppercase mb-3 print:mb-1 print:text-slate-700">Role: AI Architect</p>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4 flex-grow print:hidden">
+                            SaaS Agentic Orchestrator for clinic executives. Extracts raw MIS data and builds analytical insights via AI agents.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 print:hidden text-[10px] font-bold text-slate-400">
+                            RESULT: From idea to working prototype in 7 days.
+                        </div>
+                    </div>
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 flex flex-col print:p-0 print:border-0">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-800 text-slate-900 text-lg print:text-sm print:inline">Small Ai centric products</h3>
+                            <a href="https://t.me/aichatbotfactory" target="_blank" class="text-blue-600 hover:underline text-xs font-mono print:text-slate-500 print:ml-2">#ai-driven-products</a>
+                        </div>
+                        <p class="text-[10px] text-blue-600 font-bold uppercase mb-3 print:mb-1 print:text-slate-700">Role: Product Lead</p>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4 flex-grow print:hidden">
+                            Developed autonomous flow for lead gen & MVPs. Tested 14 hypotheses, served 45k+ users solo.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 print:hidden text-[10px] font-bold text-slate-400">
+                            RESULT: 5 hypotheses validated. Automated sales funnel in place.
+                        </div>
+                    </div>
+
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 flex flex-col print:p-0 print:border-0">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-800 text-slate-900 text-lg print:text-sm print:inline">AnkiPro</h3>
+                            <a href="https://ankipro.net" target="_blank" class="text-blue-600 hover:underline text-xs font-mono print:text-slate-500 print:ml-2">ankipro.net</a>
+                        </div>
+                        <p class="text-[10px] text-blue-600 font-bold uppercase mb-3 print:mb-1 print:text-slate-700">Role: Senior Lead Engineer</p>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4 flex-grow print:hidden">
+                            Scaled infrastructure for 1M+ users. Established CI/CD, Git-Flow, and high-load architecture.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 print:hidden text-[10px] font-bold text-slate-400">
+                            RESULT: Seamless growth to 1,000,000 users.
+                        </div>
+                    </div>
+
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 flex flex-col print:p-0 print:border-0">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-800 text-slate-900 text-lg print:text-sm print:inline">Bright</h3>
+                            <a href="https://brightsec.com/" target="_blank" class="text-blue-600 hover:underline text-xs font-mono print:text-slate-500 print:ml-2">brightsec.com</a>
+                        </div>
+                        <p class="text-[10px] text-blue-600 font-bold uppercase mb-3 print:mb-1 print:text-slate-700">Role: Core Team / Crystal Dev</p>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4 flex-grow print:hidden">
+                            Refactored legacy Ruby core to DDD. Wrote high-perf binaries in Crystal for data processing.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 print:hidden text-[10px] font-bold text-slate-400">
+                            RESULT: Significant reduction in server latency.
+                        </div>
+                    </div>
+
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 flex flex-col print:p-0 print:border-0">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-800 text-slate-900 text-lg print:text-sm print:inline">BP Pulse</h3>
+                            <a href="https://bppulse.co.uk" target="_blank" class="text-blue-600 hover:underline text-xs font-mono print:text-slate-500 print:ml-2">bppulse.co.uk</a>
+                        </div>
+                        <p class="text-[10px] text-blue-600 font-bold uppercase mb-3 print:mb-1 print:text-slate-700">Role: Backend Engineer</p>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4 flex-grow print:hidden">
+                            Designed architecture and microservices for global EV charging network. Built high-load data ingestion.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 print:hidden text-[10px] font-bold text-slate-400">
+                            RESULT: Core infra for 10k+ charging stations.
+                        </div>
+                    </div>
+
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 flex flex-col print:p-0 print:border-0">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-800 text-slate-900 text-lg print:text-sm print:inline">TaxDome</h3>
+                            <a href="https://taxdome.com" target="_blank" class="text-blue-600 hover:underline text-xs font-mono print:text-slate-500 print:ml-2">taxdome.com</a>
+                        </div>
+                        <p class="text-[10px] text-blue-600 font-bold uppercase mb-3 print:mb-1 print:text-slate-700">Role: Fullstack Engineer</p>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4 flex-grow print:hidden">
+                            Engineered automated Kanban system and complex workflow triggers using Ruby & React.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 print:hidden text-[10px] font-bold text-slate-400">
+                            RESULT: Delivered #1 most requested feature.
+                        </div>
+                    </div>
+
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 flex flex-col print:p-0 print:border-0">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-800 text-slate-900 text-lg print:text-sm print:inline">Yandex Taxi Quality Control</h3>
+                            <a href="https://taxi.yandex.com/" target="_blank" class="text-blue-600 hover:underline text-xs font-mono print:text-slate-500 print:ml-2">taxi.yandex.com</a>
+                        </div>
+                        <p class="text-[10px] text-blue-600 font-bold uppercase mb-3 print:mb-1 print:text-slate-700">Role: Solo Developer</p>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4 flex-grow print:hidden">
+                            Optimized DB load by 35% for internal analytics. Scaled reporting tools for internal ops.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 print:hidden text-[10px] font-bold text-slate-400">
+                            RESULT: High-performance data ecosystem.
+                        </div>
+                    </div>
+
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 flex flex-col print:p-0 print:border-0">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-800 text-slate-900 text-lg print:text-sm print:inline">Disney Russia</h3>
+                            <a href="https://disney.ru" target="_blank" class="text-blue-600 hover:underline text-xs font-mono print:text-slate-500 print:ml-2">disney.ru</a>
+                        </div>
+                        <p class="text-[10px] text-blue-600 font-bold uppercase mb-3 print:mb-1 print:text-slate-700">Role: Team Lead</p>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4 flex-grow print:hidden">
+                            Led team of 4. Built CMS, mobile APIs and radio portals from scratch.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 print:hidden text-[10px] font-bold text-slate-400">
+                            RESULT: Successful launch of the RU digital portal.
+                        </div>
+                    </div>
+
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 flex flex-col print:p-0 print:border-0">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-800 text-slate-900 text-lg print:text-sm print:inline">T-Systems (PESA)</h3>
+                            <a href="https://t-systems.com/" target="_blank" class="text-blue-600 hover:underline text-xs font-mono print:text-slate-500 print:ml-2">t-systems.com</a>
+                        </div>
+                        <p class="text-[10px] text-blue-600 font-bold uppercase mb-3 print:mb-1 print:text-slate-700">Role: Java Developer</p>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4 flex-grow print:hidden">
+                            BPMN services for Deutsche Telekom. Data visualization and risk management tools.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-50 print:hidden text-[10px] font-bold text-slate-400">
+                            RESULT: Enterprise-grade BPM compliance.
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
