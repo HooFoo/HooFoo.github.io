@@ -154,145 +154,120 @@
                     </div>
                 </div>
             </section>
-
-            <section id="experience" class="tab-content">
-                <h2 class="text-3xl font-800 mb-8 tracking-tight uppercase">The Career Roadmap<span class="text-blue-600">_</span></h2>
+            <section id="experience" class="tab-content print:p-0 print:m-0">
+                <h2 class="text-3xl font-800 mb-10 tracking-tight uppercase border-b-2 border-slate-100 pb-4 print:text-2xl print:border-slate-300 print:mb-4">The Career Roadmap</h2>
                 
-                <div class="space-y-16 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[25px] before:h-full before:w-0.5 before:bg-gradient-to-b before:from-blue-600 before:via-slate-200 before:to-transparent">
+                <!-- Линия таймлайна скрыта для печати -->
+                <div class="space-y-16 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[25px] before:h-full before:w-0.5 before:bg-gradient-to-b before:from-blue-600 before:via-slate-200 before:to-transparent print:before:hidden print:space-y-8">
 
-                    <div class="relative pl-12 md:pl-20">
-                        <div class="absolute left-0 top-0 flex items-center justify-center w-[50px] h-[50px] rounded-2xl border-4 border-white bg-blue-600 shadow-xl z-10">
-                            <i class="fas fa-crown text-white text-xl"></i>
+                    <!-- Блок опыта 1 -->
+                    <div class="relative pl-12 md:pl-20 print:pl-0">
+                        <!-- Иконка скрыта -->
+                        <div class="absolute left-0 top-0 flex items-center justify-center w-[50px] h-[50px] rounded-2xl border-4 border-white bg-blue-600 shadow-xl z-10 no-print print:hidden">
+                            <i class="fas fa-rocket text-white"></i>
                         </div>
-                        <div class="bg-white p-8 rounded-3xl border-2 border-blue-600 shadow-sm">
-                            <div class="flex flex-col md:flex-row justify-between mb-6">
-                                <div>
-                                    <h3 class="text-2xl font-800 text-slate-900">Solopreneur & AI Architect</h3>
-                                    <p class="text-blue-600 font-bold mono text-sm uppercase tracking-wider">May 2024 — Present</p>
-                                </div>
-                            </div>
+                        <div class="bg-white p-8 rounded-3xl border-2 border-blue-600 shadow-sm print:p-0 print:border-0 print:shadow-none">
+                            <h3 class="text-2xl font-800 text-slate-900 mb-1 print:text-xl">Solopreneur & AI Architect </h3>
+                            <p class="text-blue-600 font-bold mono text-sm uppercase mb-6 print:mb-2 print:text-black">May 2024 — Present </p>
                             
-                            <p class="text-slate-600 mb-6 leading-relaxed">
-                                Operating as a technology-agnostic architect using <strong>agentic programming</strong> to build a diverse product ecosystem. Focused on rapid hypothesis testing and high-velocity scaling of AI-driven platforms.
+                            <p class="text-slate-600 mb-6 leading-relaxed print:text-sm print:mb-4">
+                                Focused on extreme <b>Time-to-Market reduction</b>, turning ideas into AI-centric MVPs within days. I specialize in the full product cycle: hypothesis packaging, rapid prototyping, audience testing via metrics, and sales funnel optimization. By engineering <b>autonomous AI agent flows</b> I fully automate business processes, operating as a high-impact solo team.
                             </p>
 
-                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                                <div class="p-3 bg-slate-50 rounded-2xl text-center">
-                                    <div class="text-xl font-800 text-blue-600">5</div>
-                                    <div class="text-[9px] uppercase font-bold text-slate-400">Live Projects</div>
+                            <!-- Сетка статистики в печати становится более компактной -->
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 stats-grid print:grid-cols-4 print:gap-2 print:mb-4">
+                                <div class="p-3 bg-slate-50 rounded-2xl text-center border border-slate-100 print:bg-transparent print:border-0 print:text-left print:p-0">
+                                    <div class="text-xl font-800 text-blue-600 print:text-sm print:text-black">5 Products</div>
+                                    <div class="text-[9px] uppercase font-bold text-slate-400 print:hidden">Launched</div>
                                 </div>
-                                <div class="p-3 bg-slate-50 rounded-2xl text-center">
-                                    <div class="text-xl font-800 text-blue-600">9</div>
-                                    <div class="text-[9px] uppercase font-bold text-slate-400">Tested Hypotheses</div>
+                                <div class="p-3 bg-slate-50 rounded-2xl text-center border border-slate-100 print:bg-transparent print:border-0 print:text-left print:p-0">
+                                    <div class="text-xl font-800 text-blue-600 print:text-sm print:text-black">14 Hypotheses</div>
+                                    <div class="text-[9px] uppercase font-bold text-slate-400 print:hidden">Tested</div>
                                 </div>
-                                <div class="p-3 bg-slate-50 rounded-2xl text-center">
-                                    <div class="text-xl font-800 text-blue-600">45k+</div>
-                                    <div class="text-[9px] uppercase font-bold text-slate-400">Active Clients</div>
+                                <div class="p-3 bg-slate-50 rounded-2xl text-center border border-slate-100 print:bg-transparent print:border-0 print:text-left print:p-0">
+                                    <div class="text-xl font-800 text-blue-600 print:text-sm print:text-black">45k+ Clients</div>
+                                    <div class="text-[9px] uppercase font-bold text-slate-400 print:hidden">Served</div>
                                 </div>
-                                <div class="p-3 bg-slate-50 rounded-2xl text-center text-blue-600">
-                                    <i class="fas fa-brain text-xl"></i>
-                                    <div class="text-[9px] uppercase font-bold text-slate-400">Agentic Flow</div>
+                                <div class="p-3 bg-slate-50 rounded-2xl text-center border border-slate-100 print:hidden">
+                                    <i class="fas fa-user-robot text-blue-600 text-xl"></i>
+                                    <div class="text-[9px] uppercase font-bold text-slate-400">AI-Centric Solo</div>
                                 </div>
                             </div>
 
-                            <div class="flex flex-wrap gap-2">
-                                <span class="text-[10px] px-3 py-1 bg-slate-900 text-white rounded-md font-bold uppercase tracking-tighter">Python</span>
-                                <span class="text-[10px] px-3 py-1 bg-slate-900 text-white rounded-md font-bold uppercase tracking-tighter">JS/React</span>
-                                <span class="text-[10px] px-3 py-1 bg-slate-900 text-white rounded-md font-bold uppercase tracking-tighter">Ruby/PHP</span>
-                                <span class="text-[10px] px-3 py-1 bg-blue-600 text-white rounded-md font-bold uppercase tracking-tighter">AI Agents</span>
+                            <div class="flex flex-wrap gap-2 tech-tag print:gap-1">
+                                <span class="text-[10px] px-3 py-1 bg-blue-600 text-white rounded-md font-bold uppercase print:bg-transparent print:text-black print:border print:border-slate-200 print:px-2">Hypothesis Testing</span>
+                                <span class="text-[10px] px-3 py-1 bg-slate-900 text-white rounded-md font-bold uppercase print:bg-transparent print:text-black print:border print:border-slate-200 print:px-2">Sales Funnels</span>
+                                <span class="text-[10px] px-3 py-1 bg-slate-900 text-white rounded-md font-bold uppercase print:bg-transparent print:text-black print:border print:border-slate-200 print:px-2">Metrics & Growth</span>
+                                <span class="text-[10px] px-3 py-1 bg-slate-900 text-white rounded-md font-bold uppercase print:bg-transparent print:text-black print:border print:border-slate-200 print:px-2">Agentic Programming</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="relative pl-12 md:pl-20">
-                        <div class="absolute left-0 top-0 flex items-center justify-center w-[50px] h-[50px] rounded-2xl border-4 border-white bg-slate-800 shadow-md z-10">
-                            <i class="fas fa-gem text-white text-xl"></i>
+                    <!-- Блок опыта 2 -->
+                    <div class="relative pl-12 md:pl-20 print:pl-0">
+                        <div class="absolute left-0 top-0 flex items-center justify-center w-[50px] h-[50px] rounded-2xl border-4 border-white bg-slate-800 shadow-md z-10 no-print print:hidden">
+                            <i class="fas fa-gem text-white"></i>
                         </div>
-                        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
-                            <h3 class="text-2xl font-800 text-slate-900 mb-1">Senior Software Architect (Ruby Focus)</h3>
-                            <p class="text-slate-400 font-bold mono text-xs mb-8 uppercase tracking-widest">2016 — 2024</p>
+                        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm print:p-0 print:border-0 print:shadow-none">
+                            <h3 class="text-2xl font-800 text-slate-900 mb-1 print:text-xl">Senior Software Engineer (Ruby Focus) </h3>
+                            <p class="text-slate-400 font-bold mono text-xs mb-8 uppercase tracking-widest print:mb-4 print:text-black">Feb 2016 — May 2024 </p>
                             
-                            <div class="space-y-8">
-                                <div class="border-l-2 border-slate-100 pl-6">
-                                    <h4 class="font-800 text-slate-900 text-sm">Bright Security | Core Team Engineer</h4>
-                                    <p class="text-xs text-slate-500 mb-2 italic">2022 – 2024</p>
-                                    <p class="text-xs text-slate-600 mb-3">Refactored complex legacy modules into a <strong>Domain-Driven Design (DDD)</strong> architecture. Drastically improved test coverage and developed high-performance system binaries.</p>
-                                    <div class="flex gap-2">
-                                        <span class="text-[9px] font-bold text-blue-600 uppercase tracking-tighter">Crystal Lang • DDD • Docker • K8s</span>
-                                    </div>
+                            <div class="space-y-8 print:space-y-4">
+                                <div class="border-l-2 border-slate-100 pl-6 print:pl-4 print:border-slate-200">
+                                    <h4 class="font-800 text-slate-900 text-sm italic">Bright (Core Team) & AnkiPro (Senior Lead) </h4>
+                                    <ul class="text-xs text-slate-600 space-y-2 list-disc pl-4 mt-2 print:text-slate-800">
+                                        <li><b>Bright</b> Refactored complex legacy core into a clean <b>DDD architecture</b> and developed high-performance system binaries using Crystal.</li>
+                                        <li><b>AnkiPro</b> Unblocked development by establishing CI/CD and Git-Flow. Optimized architecture to support growth to <b> 1,000,000 users</b>.</li>
+                                    </ul>
+                                    <div class="mt-2 tech-tag print:mt-1"><span class="text-[9px] font-bold text-blue-600 uppercase tracking-tighter print:text-slate-500">Crystal • RoR 7 • DDD • K8s • Scaling</span></div>
                                 </div>
 
-                                <div class="border-l-2 border-slate-100 pl-6">
-                                    <h4 class="font-800 text-slate-900 text-sm">AnkiPro | Senior Backend Lead</h4>
-                                    <p class="text-xs text-slate-500 mb-2 italic">2022</p>
-                                    <p class="text-xs text-slate-600 mb-3">Established Git-Flow and CI/CD processes, unblocking the entire development cycle. Optimized the architecture to support scaling to <strong>1,000,000 active users</strong>.</p>
-                                    <div class="flex gap-2">
-                                        <span class="text-[9px] font-bold text-blue-600 uppercase tracking-tighter">RoR 7 • Workflow Scaling • PostgreSQL</span>
-                                    </div>
+                                <div class="border-l-2 border-slate-100 pl-6 print:pl-4 print:border-slate-200">
+                                    <h4 class="font-800 text-slate-900 text-sm italic">BP Pulse (Architect) & TaxDome (Fullstack) </h4>
+                                    <ul class="text-xs text-slate-600 space-y-2 list-disc pl-4 mt-2 print:text-slate-800">
+                                        <li><b>BP Pulse</b> Designed and built multi-domain microservices from scratch for a global high-load EV infrastructure.</li>
+                                        <li><b>TaxDome</b> Engineered a core selling feature—an <b>automated Kanban board</b> with custom status-transition actions.</li>
+                                    </ul>
+                                    <div class="mt-2 tech-tag print:mt-1"><span class="text-[9px] font-bold text-blue-600 uppercase tracking-tighter print:text-slate-500">Microservices • RoR • React • Kanban Logic</span></div>
                                 </div>
 
-                                <div class="border-l-2 border-slate-100 pl-6">
-                                    <h4 class="font-800 text-slate-900 text-sm">BP Pulse (Sphere) | Architect</h4>
-                                    <p class="text-xs text-slate-500 mb-2 italic">2021</p>
-                                    <p class="text-xs text-slate-600 mb-3">Collaborated on the initial architectural design and developed microservices from scratch across multiple domains for global EV infrastructure.</p>
-                                    <div class="flex gap-2">
-                                        <span class="text-[9px] font-bold text-blue-600 uppercase tracking-tighter">Microservices • Kubernetes • API Design</span>
-                                    </div>
-                                </div>
-
-                                <div class="border-l-2 border-slate-100 pl-6">
-                                    <h4 class="font-800 text-slate-900 text-sm">TaxDome | Fullstack Engineer</h4>
-                                    <p class="text-xs text-slate-500 mb-2 italic">2019 – 2020</p>
-                                    <p class="text-xs text-slate-600 mb-3">Developed a key selling feature: an <strong>automated Kanban board</strong> with status-transition triggers and background action processing.</p>
-                                    <div class="flex gap-2">
-                                        <span class="text-[9px] font-bold text-blue-600 uppercase tracking-tighter">Ruby on Rails • React/Vue • UX Logic</span>
-                                    </div>
-                                </div>
-
-                                <div class="border-l-2 border-slate-100 pl-6">
-                                    <h4 class="font-800 text-slate-900 text-sm">Yandex.Taxi & Disney.ru | Lead / Senior</h4>
-                                    <p class="text-xs text-slate-500 mb-2 italic">2016 – 2018</p>
-                                    <p class="text-xs text-slate-600 mb-3"><strong>Yandex:</strong> Solely responsible for the growth and maintenance of the internal analytics service. <br><strong>Disney:</strong> <strong>Team Lead</strong> for Disney.ru CMS and mobile API development.</p>
-                                    <div class="flex gap-2">
-                                        <span class="text-[9px] font-bold text-blue-600 uppercase tracking-tighter">Leadership • High Load • MongoDB • Sinatra</span>
-                                    </div>
+                                <div class="border-l-2 border-slate-100 pl-6 print:pl-4 print:border-slate-200">
+                                    <h4 class="font-800 text-slate-900 text-sm italic">Yandex.Taxi (Solo Dev) & Disney.ru (Team Lead) </h4>
+                                    <ul class="text-xs text-slate-600 space-y-2 list-disc pl-4 mt-2 print:text-slate-800">
+                                        <li><b>Yandex</b> Solely responsible for the evolution and 35% DB load optimization of the internal analytics ecosystem.</li>
+                                        <li><b>Disney</b> <b>Led a team of 4 developers</b> building the CMS, mobile APIs, and radio portals for Disney.ru.</li>
+                                    </ul>
+                                    <div class="mt-2 tech-tag print:mt-1"><span class="text-[9px] font-bold text-blue-600 uppercase tracking-tighter print:text-slate-500">Leadership • Performance • MongoDB • Sinatra</span></div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="relative pl-12 md:pl-20">
-                        <div class="absolute left-0 top-0 flex items-center justify-center w-[50px] h-[50px] rounded-2xl border-4 border-white bg-slate-200 shadow-sm z-10">
-                            <i class="fas fa-seedling text-slate-500 text-xl"></i>
+                    <!-- Блок опыта 3 -->
+                    <div class="relative pl-12 md:pl-20 print:pl-0">
+                        <div class="absolute left-0 top-0 flex items-center justify-center w-[50px] h-[50px] rounded-2xl border-4 border-white bg-slate-200 shadow-sm z-10 no-print print:hidden">
+                            <i class="fas fa-seedling text-slate-500"></i>
                         </div>
-                        <div class="bg-white p-8 rounded-3xl border border-slate-100 opacity-90">
-                            <h3 class="text-xl font-800 text-slate-900 mb-1 uppercase tracking-tight">Foundation & Enterprise Tech</h3>
-                            <p class="text-slate-400 font-bold mono text-xs mb-8 uppercase tracking-widest">2012 — 2015</p>
+                        <div class="bg-white p-8 rounded-3xl border border-slate-100 opacity-90 print:p-0 print:border-0 print:opacity-100 print:shadow-none">
+                            <h3 class="text-xl font-800 text-slate-900 mb-1 uppercase tracking-tight print:text-lg">Enterprise Foundation</h3>
+                            <p class="text-slate-400 font-bold mono text-xs mb-8 uppercase tracking-widest print:mb-4 print:text-black">May 2012 — Dec 2015 </p>
                             
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-6 print:space-y-4">
                                 <div>
-                                    <h4 class="text-xs font-bold text-slate-900 uppercase mb-2">T-Systems & E-ngineers</h4>
-                                    <p class="text-xs text-slate-500 mb-1 italic">Java Developer | 2013 – 2015</p>
-                                    <ul class="text-[11px] text-slate-600 space-y-1 list-disc pl-4">
-                                        <li>Developed BPMN-based web services for <strong>Deutsche Telekom (PESA Project)</strong>[cite: 112, 114].</li>
-                                        <li>Engineered banking risk management solutions using the JavaEE stack[cite: 131, 132].</li>
-                                        <li>Implemented complex data visualizations using D3.js and SVG[cite: 144, 145].</li>
+                                    <h4 class="font-bold text-slate-900 uppercase text-xs">T-Systems & E-ngineers (Java Developer) </h4>
+                                    <ul class="text-xs text-slate-600 space-y-2 list-disc pl-4 mt-2 print:text-slate-800">
+                                        <li>Developed BPMN-based web services for <b> Deutsche Telekom</b>(PESA project).</li>
+                                        <li>Built banking risk management tools using JavaEE and Spring stacks.</li>
+                                        <li>Implemented complex data visualizations with D3.js and SVG.</li>
                                     </ul>
-                                    <div class="mt-3 flex gap-2">
-                                        <span class="text-[8px] font-bold text-slate-400 uppercase">JavaEE • Spring • Hibernate • BPMN</span>
-                                    </div>
                                 </div>
                                 <div>
-                                    <h4 class="text-xs font-bold text-slate-900 uppercase mb-2">Main System</h4>
-                                    <p class="text-xs text-slate-500 mb-1 italic">C# / C++ Developer | 2012 – 2013</p>
-                                    <ul class="text-[11px] text-slate-600 space-y-1 list-disc pl-4">
-                                        <li>Built advanced desktop browser applications using C# and C++[cite: 147, 150].</li>
-                                        <li>Integrated the <strong>Google V8 Engine</strong> for custom JavaScript scripting capabilities[cite: 155, 156].</li>
-                                        <li>Focused on low-level performance using Boost and STL[cite: 153, 154].</li>
+                                    <h4 class="font-bold text-slate-900 uppercase text-xs">Main System (Junior C# / C++ Developer) </h4>
+                                    <ul class="text-xs text-slate-600 space-y-2 list-disc pl-4 mt-2 print:text-slate-800">
+                                        <li>Developed desktop browser-like applications with custom UI.</li>
+                                        <li>Integrated <b>Google V8 Engine</b> for advanced JavaScript scripting.</li>
+                                        <li>Optimized low-level performance using C++ Boost and STL.</li>
                                     </ul>
-                                    <div class="mt-3 flex gap-2">
-                                        <span class="text-[8px] font-bold text-slate-400 uppercase">.NET • C++ • Google V8 • STL</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
