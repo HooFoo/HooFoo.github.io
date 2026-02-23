@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Gennadii Khudiakov | AI & Software Architect<">
+    <meta property="og:title" content="Gennadii Khudiakov | AI & Software Architect">
     <meta property="og:description" content="Senior Full-Stack & AI Architect • 12y Experience. Transforming business processes with agentic AI and robust scalable architecture.">
     <meta property="og:image" content="/photo.png">
     <meta property="og:url" content="https://hoofoo.github.io/">
@@ -33,29 +33,29 @@
         <aside class="w-full md:w-80 bg-white border-r border-slate-200 p-6 flex flex-col no-print md:sticky md:top-0 md:h-screen glass">
             <div class="flex flex-col items-center text-center mb-8">
                 <div class="relative">
-                    <img src="/photo.png" alt="Gena" class="w-32 h-32 rounded-3xl object-cover shadow-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
+                    <img src="/photo.png" alt="Gennadii Khudiakov" width="128" height="128" class="w-32 h-32 rounded-3xl object-cover shadow-xl mb-4 grayscale hover:grayscale-0 transition-all duration-500">
                     <div class="absolute -bottom-2 -right-2 bg-green-500 w-6 h-6 rounded-full border-4 border-white shadow-sm" title="Available for projects"></div>
                 </div>
                 <h1 class="text-xl font-800 tracking-tight">Gennadii Khudiakov</h1>
                 <p class="text-sm font-medium text-slate-500 mt-1">Senior Full-Stack & AI Architect</p>
                 <div class="flex gap-3 mt-4">
-                    <a href="https://github.com/HooFoo" target="_blank" class="text-slate-400 hover:text-slate-900"><i class="fab fa-github text-xl"></i></a>
-                    <a href="https://t.me/random4096" target="_blank" class="text-slate-400 hover:text-blue-500"><i class="fab fa-telegram text-xl"></i></a>
-                    <a href="mailto:hoofoo@yandex.ru" class="text-slate-400 hover:text-red-500"><i class="fas fa-envelope text-xl"></i></a>
+                    <a href="https://github.com/HooFoo" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-900" aria-label="GitHub Profile"><i class="fab fa-github text-xl"></i></a>
+                    <a href="https://t.me/random4096" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500" aria-label="Telegram Message"><i class="fab fa-telegram text-xl"></i></a>
+                    <a href="mailto:hoofoo@yandex.ru" class="text-slate-400 hover:text-red-500" aria-label="Send Email"><i class="fas fa-envelope text-xl"></i></a>
                 </div>
             </div>
 
-            <nav class="flex-1 space-y-1">
-                <button onclick="showTab('summary')" id="btn-summary" class="sidebar-link active w-full text-left px-4 py-3 rounded-l-xl font-semibold flex items-center gap-3 transition-all">
+            <nav class="flex-1 space-y-1" role="tablist" aria-label="Sections">
+                <button onclick="showTab('summary')" id="btn-summary" role="tab" aria-selected="true" aria-controls="summary" class="sidebar-link active w-full text-left px-4 py-3 rounded-l-xl font-semibold flex items-center gap-3 transition-all">
                     <i class="fas fa-terminal w-5 text-blue-500"></i> Summary
                 </button>
-                <button onclick="showTab('projects')" id="btn-projects" class="sidebar-link w-full text-left px-4 py-3 rounded-l-xl font-semibold flex items-center gap-3 transition-all text-slate-600 hover:bg-slate-50">
+                <button onclick="showTab('projects')" id="btn-projects" role="tab" aria-selected="false" aria-controls="projects" class="sidebar-link w-full text-left px-4 py-3 rounded-l-xl font-semibold flex items-center gap-3 transition-all text-slate-600 hover:bg-slate-50">
                     <i class="fas fa-rocket w-5"></i> Portfolio
                 </button>
-                <button onclick="showTab('skills')" id="btn-skills" class="sidebar-link w-full text-left px-4 py-3 rounded-l-xl font-semibold flex items-center gap-3 transition-all text-slate-600 hover:bg-slate-50">
+                <button onclick="showTab('skills')" id="btn-skills" role="tab" aria-selected="false" aria-controls="skills" class="sidebar-link w-full text-left px-4 py-3 rounded-l-xl font-semibold flex items-center gap-3 transition-all text-slate-600 hover:bg-slate-50">
                     <i class="fas fa-brain w-5"></i> Stack & Skills
                 </button>
-                <button onclick="showTab('experience')" id="btn-experience" class="sidebar-link w-full text-left px-4 py-3 rounded-l-xl font-semibold flex items-center gap-3 transition-all text-slate-600 hover:bg-slate-50">
+                <button onclick="showTab('experience')" id="btn-experience" role="tab" aria-selected="false" aria-controls="experience" class="sidebar-link w-full text-left px-4 py-3 rounded-l-xl font-semibold flex items-center gap-3 transition-all text-slate-600 hover:bg-slate-50">
                     <i class="fas fa-history w-5"></i> Career
                 </button>
             </nav>
@@ -64,7 +64,7 @@
                 
                 <div class="px-6 py-4 flex flex-col gap-3">
                     
-                    <a href="https://calendar.app.google/DHThh6Cbabe45i1a6" target="_blank" 
+                    <a href="https://calendar.app.google/DHThh6Cbabe45i1a6" target="_blank" rel="noopener noreferrer"
                     class="w-full px-4 py-3 bg-blue-600 text-white rounded-xl font-bold text-sm shadow-lg shadow-blue-100 hover:bg-blue-700 hover:-translate-y-0.5 transition-all flex items-center justify-center">
                         <i class="fas fa-calendar-check mr-2"></i> 
                         Book a Meeting
@@ -82,7 +82,7 @@
 
         <main class="flex-1 p-6 md:p-12 overflow-y-auto">
             
-        <section id="summary" class="tab-content mt-12 print:mt-6 active">
+        <section id="summary" class="tab-content mt-12 print:mt-6 active" role="tabpanel" aria-labelledby="btn-summary">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 print:mb-6">
                 <div>
                     <h1 class="text-5xl font-900 tracking-tighter text-slate-900 print:text-3xl">Gennadii Khudiakov</h1>
@@ -146,7 +146,7 @@
             </div>
         </section>
 
-            <section id="projects" class="tab-content mt-12 print:mt-6">
+            <section id="projects" class="tab-content mt-12 print:mt-6" role="tabpanel" aria-labelledby="btn-projects">
                 <h2 class="text-3xl font-800 mb-8 tracking-tight uppercase border-b-2 border-slate-900 pb-2 print:text-xl print:mb-4">
                     Project Case Studies
                 </h2>
@@ -308,7 +308,7 @@
                 </div>
             </section>
 
-            <section id="skills" class="tab-content mt-16 print:mt-8">
+            <section id="skills" class="tab-content mt-16 print:mt-8" role="tabpanel" aria-labelledby="btn-skills">
                 <h2 class="text-3xl font-800 mb-10 tracking-tight uppercase border-b-2 border-slate-900 pb-4 print:text-xl print:mb-4">
                     Technical Arsenal & Product Leadership
                 </h2>
@@ -441,7 +441,7 @@
                 </div>
             </section>
 
-            <section id="experience" class="tab-content print:p-0 print:m-0">
+            <section id="experience" class="tab-content print:p-0 print:m-0" role="tabpanel" aria-labelledby="btn-experience">
                 <h2 class="text-3xl font-800 mb-10 tracking-tight uppercase border-b-2 border-slate-100 pb-4 print:text-2xl print:border-slate-300 print:mb-4">The Career Roadmap</h2>
                 
                 <!-- Линия таймлайна скрыта для печати -->
@@ -455,14 +455,14 @@
                         </div>
                         <div class="bg-white p-8 rounded-3xl border-2 border-blue-600 shadow-sm print:p-0 print:border-0 print:shadow-none">
                             <h3 class="text-2xl font-800 text-slate-900 mb-1 print:text-xl">Solopreneur & AI Architect </h3>
-                            <p class="text-blue-600 font-bold mono text-sm uppercase mb-6 print:mb-2 print:text-black">May 2024 — Present </p>
+                            <p class="text-blue-600 font-bold mono text-sm uppercase mb-6 print:mb-2 print:text-black"><time datetime="2024-05">May 2024</time> — Present </p>
                             
                             <p class="text-slate-600 mb-6 leading-relaxed print:text-sm print:mb-4">
                                 Focused on extreme <b>Time-to-Market reduction</b>, turning ideas into AI-centric MVPs within days. I specialize in the full product cycle: hypothesis packaging, rapid prototyping, audience testing via metrics, and sales funnel optimization. By engineering <b>autonomous AI agent flows</b> I fully automate business processes, operating as a high-impact solo team.
                             </p>
 
                             <!-- Сетка статистики в печати становится более компактной -->
-                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 stats-grid print:grid-cols-4 print:gap-2 print:mb-4">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 stats-grid print:grid-cols-3 print:gap-2 print:mb-4">
                                 <div class="p-3 bg-slate-50 rounded-2xl text-center border border-slate-100 print:bg-transparent print:border-0 print:text-left print:p-0">
                                     <div class="text-xl font-800 text-blue-600 print:text-sm print:text-black">5 Products</div>
                                     <div class="text-[9px] uppercase font-bold text-slate-400 print:hidden">Launched</div>
@@ -474,10 +474,6 @@
                                 <div class="p-3 bg-slate-50 rounded-2xl text-center border border-slate-100 print:bg-transparent print:border-0 print:text-left print:p-0">
                                     <div class="text-xl font-800 text-blue-600 print:text-sm print:text-black">45k+ Clients</div>
                                     <div class="text-[9px] uppercase font-bold text-slate-400 print:hidden">Served</div>
-                                </div>
-                                <div class="p-3 bg-slate-50 rounded-2xl text-center border border-slate-100 print:hidden">
-                                    <i class="fas fa-user-robot text-blue-600 text-xl"></i>
-                                    <div class="text-[9px] uppercase font-bold text-slate-400">AI-Centric Solo</div>
                                 </div>
                             </div>
 
@@ -497,7 +493,7 @@
                         </div>
                         <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm print:p-0 print:border-0 print:shadow-none">
                             <h3 class="text-2xl font-800 text-slate-900 mb-1 print:text-xl">Senior Software Engineer (Ruby Focus) </h3>
-                            <p class="text-slate-400 font-bold mono text-xs mb-8 uppercase tracking-widest print:mb-4 print:text-black">Feb 2016 — May 2024 </p>
+                            <p class="text-slate-400 font-bold mono text-xs mb-8 uppercase tracking-widest print:mb-4 print:text-black"><time datetime="2016-02">Feb 2016</time> — <time datetime="2024-05">May 2024</time> </p>
                             
                             <div class="space-y-8 print:space-y-4">
                                 <div class="border-l-2 border-slate-100 pl-6 print:pl-4 print:border-slate-200">
@@ -537,7 +533,7 @@
                         </div>
                         <div class="bg-white p-8 rounded-3xl border border-slate-100 opacity-90 print:p-0 print:border-0 print:opacity-100 print:shadow-none">
                             <h3 class="text-xl font-800 text-slate-900 mb-1 uppercase tracking-tight print:text-lg">Enterprise Foundation</h3>
-                            <p class="text-slate-400 font-bold mono text-xs mb-8 uppercase tracking-widest print:mb-4 print:text-black">May 2012 — Dec 2015 </p>
+                            <p class="text-slate-400 font-bold mono text-xs mb-8 uppercase tracking-widest print:mb-4 print:text-black"><time datetime="2012-05">May 2012</time> — <time datetime="2015-12">Dec 2015</time> </p>
                             
                             <div class="space-y-6 print:space-y-4">
                                 <div>
@@ -572,10 +568,15 @@
     <script>
         function showTab(tabId) {
             document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-            document.querySelectorAll('.sidebar-link').forEach(link => link.classList.remove('active'));
+            document.querySelectorAll('.sidebar-link').forEach(link => {
+                link.classList.remove('active');
+                link.setAttribute('aria-selected', 'false');
+            });
             
             document.getElementById(tabId).classList.add('active');
-            document.getElementById('btn-' + tabId).classList.add('active');
+            const targetBtn = document.getElementById('btn-' + tabId);
+            targetBtn.classList.add('active');
+            targetBtn.setAttribute('aria-selected', 'true');
         }
 
         // Chat Widget Init
@@ -583,10 +584,23 @@
             const script = document.createElement('script');
             script.src = "https://chat-engine.ai/chat_widget/index.js";
             script.onload = () => {
-                new ChatEmbed("https://chat-engine.ai/?personal=10&preset=15", 'my-chat-placeholder', "Gennadii's Assistant", false, "20000");
+                new ChatEmbed("https://chat-engine.ai/?personal=10&preset=15", 'my-chat-placeholder', "Gennadii's Assistant", false, "20000", false);
             };
             document.head.appendChild(script);
         });
     </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106964118', 'ym');
+
+        ym(106964118, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/106964118" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </body>
 </html>
